@@ -28,6 +28,8 @@ void Character::attack(AEnemy *enemy)
         m_ap -= m_weapon->getAPCost();
         m_weapon->attack();
         enemy->takeDamage(m_weapon->getDamage());
+        if (enemy->getHP() <= 0)
+            delete (enemy);
     }
 }
 

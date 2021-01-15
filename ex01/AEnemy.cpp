@@ -15,5 +15,5 @@ m_type(type)
 void AEnemy::takeDamage(int damage)
 {
     if (damage > 0)
-        m_hp = ((int)m_hp - damage < 0 ? 0 : m_hp - damage);
+        m_hp -= damage;
 }
