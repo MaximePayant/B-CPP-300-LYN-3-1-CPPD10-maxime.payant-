@@ -11,7 +11,7 @@ Peon::Peon(const std::string& name) :
 Victim(name)
 {
     std::cout
-        << "Zog Zog."
+        << "Zog zog."
         << std::endl;
 }
 

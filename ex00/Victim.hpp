@@ -28,7 +28,7 @@ class Victim
 
 inline std::ostream& operator<<(std::ostream& os, const Victim& victim)
 {
-    os << "I am "
+    os << "I'm "
         << victim.getName()
         << ", and I like otters!"
         << std::endl;
