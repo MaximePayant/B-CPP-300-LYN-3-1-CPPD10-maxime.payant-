@@ -30,7 +30,7 @@ inline std::ostream& operator<<(std::ostream& os, const Victim& victim)
 {
     os << "I'm "
         << victim.getName()
-        << ", and I like otters!"
+        << " and I like otters!"
         << std::endl;
     return (os);
 }
