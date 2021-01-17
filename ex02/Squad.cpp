@@ -33,8 +33,12 @@ Squad& Squad::operator=(const Squad& squad)
 
 int Squad::push(ISpaceMarine* marine)
 {
-    if (marine)
+    if (marine) {
+        for (auto &m : m_marineList)
+            if (m == marine)
+                return (m_marineList.size());
         m_marineList.push_back(marine);
+    }
     return (m_marineList.size());
 }
 
