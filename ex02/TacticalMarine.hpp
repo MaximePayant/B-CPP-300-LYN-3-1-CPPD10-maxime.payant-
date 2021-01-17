@@ -18,7 +18,7 @@ class TacticalMarine :
 
     public:
         TacticalMarine();
-        ~TacticalMarine();
+        ~TacticalMarine() override;
 
         ISpaceMarine *clone() const override;
         void battleCry() const override;
