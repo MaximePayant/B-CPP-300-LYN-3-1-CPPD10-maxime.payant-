@@ -19,6 +19,7 @@ class AEnemy
 
     public:
         AEnemy(int hp, const std::string &type);
+        virtual ~AEnemy() {};
 
         const std::string& getType() const { return (m_type); };
         int getHP() const                  { return (m_hp);   };
