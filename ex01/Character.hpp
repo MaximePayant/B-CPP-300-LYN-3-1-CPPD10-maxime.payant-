@@ -25,7 +25,7 @@ class Character
         Character(const std::string &name);
 
         const std::string& getName() const { return (m_name);    };
-        const std::size_t& getAp() const   { return (m_ap);      };
+        const std::size_t& getAP() const   { return (m_ap);      };
         const AWeapon* getWeapon() const   { return (m_weapon); };
 
         void recoverAP();
@@ -38,7 +38,7 @@ inline std::ostream& operator<<(std::ostream& os, const Character& character)
 {
     os << character.getName()
         << " has "
-        << character.getAp()
+        << character.getAP()
         << " AP and "
         << (character.getWeapon() ? "wields a " + character.getWeapon()->getName() : "is unarmed")
         << std::endl;
