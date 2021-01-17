@@ -22,5 +22,5 @@ void SuperMutant::takeDamage(int damage)
 {
     damage -= 3;
     if (damage > 0)
-        m_hp = ((int)m_hp - damage < 0 ? 0 : m_hp - damage);
+        m_hp -= damage;
 }

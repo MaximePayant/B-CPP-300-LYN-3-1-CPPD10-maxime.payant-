@@ -39,8 +39,8 @@ inline std::ostream& operator<<(std::ostream& os, const Character& character)
     os << character.getName()
         << " has "
         << character.getAp()
-        << " AP and wields a "
-        << (character.getWeapon() ? character.getWeapon()->getName() : "unarmed")
+        << " AP and "
+        << (character.getWeapon() ? "wields a " + character.getWeapon()->getName() : "is unarmed")
         << std::endl;
     return (os);
 }
